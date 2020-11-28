@@ -15,6 +15,10 @@ http://localhost:10003/mycomments/query?userId=200715G19PPGZ72W&page=1&pageSize=
 
 >INFO  ChainedDynamicProperty:115 - Flipping property: shop-cloud-ITEM-SERVICE
 
+## 购物中心测试
+
+http://localhost:10004/shopcart/add?userId=200715G19PPGZ72W
+
 
 
 

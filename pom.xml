@@ -27,6 +27,10 @@
         <module>domain/order/shop-cloud-order-api</module>
         <module>domain/order/shop-cloud-order-service</module>
         <module>domain/order/shop-cloud-order-web</module>
+
+        <module>domain/cart/shop-cloud-cart-api</module>
+        <module>domain/cart/shop-cloud-cart-service</module>
+        <module>domain/cart/shop-cloud-cart-web</module>
     </modules>
     <packaging>pom</packaging>
 
