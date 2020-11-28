@@ -1,0 +1,3 @@
+# Project exclude paths
+/common/shop-cloud-common/target/
+/common/shop-cloud-shared-pojo/target/
