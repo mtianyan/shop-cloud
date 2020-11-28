@@ -9,6 +9,8 @@
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/domain/item/shop-item-mapper/pom.xml" />
+        <option value="$PROJECT_DIR$/domain/item/shop-item-pojo/pom.xml" />
         <option value="$PROJECT_DIR$/shop-cloud-shared-pojo/pom.xml" />
       </set>
     </option>

@@ -7,11 +7,21 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="shop-cloud-shared-pojo" />
         <module name="register-center" />
-        <module name="shop-cloud-web-components" />
+        <module name="shop-cloud-item-mapper" />
+        <module name="shop-cloud-item-service" />
         <module name="shop-cloud-common" />
+        <module name="shop-cloud-item-pojo" />
+        <module name="shop-cloud-shared-pojo" />
+        <module name="shop-cloud-item-api" />
+        <module name="shop-cloud-web-components" />
+        <module name="shop-cloud-item-web" />
+        <module name="shop-item-mapper" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="shop-item-mapper" target="1.8" />
+      <module name="shop-item-pojo" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

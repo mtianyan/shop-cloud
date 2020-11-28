@@ -22,8 +22,10 @@
     <build>
         <plugins>
             <plugin>
+
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>2.3.1.RELEASE</version>
                 <configuration>
                     <mainClass>cn.mtianyan.EurekaServerApplication</mainClass>
                 </configuration>

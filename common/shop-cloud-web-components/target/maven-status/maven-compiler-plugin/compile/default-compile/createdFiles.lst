@@ -1,0 +1,5 @@
+cn/mtianyan/aspect/ServiceLogAspect.class
+cn/mtianyan/controller/BaseController.class
+cn/mtianyan/config/CorsConfig.class
+cn/mtianyan/config/Swagger2.class
+cn/mtianyan/config/WebMvcConfig.class

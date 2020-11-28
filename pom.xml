@@ -12,6 +12,11 @@
         <module>common/shop-cloud-shared-pojo</module>
         <module>platform/register-center</module>
         <module>common/shop-cloud-web-components</module>
+        <module>domain/item/shop-cloud-item-pojo</module>
+        <module>domain/item/shop-cloud-item-mapper</module>
+        <module>domain/item/shop-cloud-item-api</module>
+        <module>domain/item/shop-cloud-item-service</module>
+        <module>domain/item/shop-cloud-item-web</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -65,11 +70,6 @@
         </dependency>
 
         <!-- swagger2 配置 -->
-        <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-swagger2</artifactId>
-            <version>2.4.0</version>
-        </dependency>
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger2</artifactId>
