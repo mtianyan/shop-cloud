@@ -17,6 +17,16 @@
     <file url="file://$PROJECT_DIR$/domain/item/shop-cloud-item-service/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/domain/item/shop-cloud-item-web/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/domain/item/shop-cloud-item-web/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/domain/user/shop-cloud-user-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/domain/user/shop-cloud-user-api/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/domain/user/shop-cloud-user-mapper/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/domain/user/shop-cloud-user-mapper/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/domain/user/shop-cloud-user-pojo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/domain/user/shop-cloud-user-pojo/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/domain/user/shop-cloud-user-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/domain/user/shop-cloud-user-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/domain/user/shop-cloud-user-web/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/domain/user/shop-cloud-user-web/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/platform/register-center/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/platform/register-center/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />

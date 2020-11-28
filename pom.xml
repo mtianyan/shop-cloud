@@ -17,6 +17,11 @@
         <module>domain/item/shop-cloud-item-api</module>
         <module>domain/item/shop-cloud-item-service</module>
         <module>domain/item/shop-cloud-item-web</module>
+        <module>domain/user/shop-cloud-user-pojo</module>
+        <module>domain/user/shop-cloud-user-mapper</module>
+        <module>domain/user/shop-cloud-user-api</module>
+        <module>domain/user/shop-cloud-user-service</module>
+        <module>domain/user/shop-cloud-user-web</module>
     </modules>
     <packaging>pom</packaging>
 

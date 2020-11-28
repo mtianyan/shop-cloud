@@ -1,0 +1,5 @@
+cn/mtianyan/user/pojo/bo/center/CenterUserBO.class
+cn/mtianyan/user/pojo/bo/UserBO.class
+cn/mtianyan/user/pojo/bo/AddressBO.class
+cn/mtianyan/user/pojo/Users.class
+cn/mtianyan/user/pojo/UserAddress.class

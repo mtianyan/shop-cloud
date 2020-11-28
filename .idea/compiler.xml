@@ -12,10 +12,15 @@
         <module name="shop-cloud-item-service" />
         <module name="shop-cloud-common" />
         <module name="shop-cloud-item-pojo" />
-        <module name="shop-cloud-shared-pojo" />
         <module name="shop-cloud-item-api" />
         <module name="shop-cloud-web-components" />
         <module name="shop-cloud-item-web" />
+        <module name="shop-cloud-user-service" />
+        <module name="shop-cloud-user-pojo" />
+        <module name="shop-cloud-user-web" />
+        <module name="shop-cloud-user-api" />
+        <module name="shop-cloud-user-mapper" />
+        <module name="shop-cloud-shared-pojo" />
         <module name="shop-item-mapper" />
       </profile>
     </annotationProcessing>

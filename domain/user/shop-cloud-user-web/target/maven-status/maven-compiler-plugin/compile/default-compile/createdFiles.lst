@@ -1,0 +1,7 @@
+cn/mtianyan/user/controller/center/CenterUserController.class
+cn/mtianyan/user/controller/center/CenterController.class
+cn/mtianyan/user/controller/AddressController.class
+cn/mtianyan/user/UserApplication.class
+cn/mtianyan/user/resource/FileUpload.class
+cn/mtianyan/user/controller/PassportController.class
+cn/mtianyan/user/exception/CustomExceptionHandler.class
