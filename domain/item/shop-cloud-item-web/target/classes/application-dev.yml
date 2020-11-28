@@ -3,7 +3,7 @@ server:
 
 spring:
   datasource:                                           # 数据源的相关配置
-    url: jdbc:mysql://localhost:3306/foodie-shop?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true
+    url: jdbc:mysql://localhost:3306/shop-cloud-shop?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true
     username: root
     password: mtianyanroot
   redis:
@@ -14,12 +14,12 @@ spring:
 #    password: mtianyanRedisRoot
     # Redis 哨兵模式
     #    database: 1
-    #    password: imooc
+    #    password: mtianyan
     #    sentinel:
-    #      master: imooc-master
+    #      master: mtianyan-master
     #      nodes: 192.168.1.191:26379,192.168.1.192:26379,192.168.1.193:26379
     # Redis 集群模式
-#    password: imooc
+#    password: mtianyan
 #    cluster:
 #      nodes: 192.168.1.201:6379,192.168.1.202:6379,192.168.1.203:6379,192.168.1.204:6379,192.168.1.205:6379,192.168.1.206:6379
 #  session:

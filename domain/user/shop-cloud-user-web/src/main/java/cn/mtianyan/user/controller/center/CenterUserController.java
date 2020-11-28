@@ -68,7 +68,7 @@ public class CenterUserController extends BaseController {
 
                 if (StringUtils.isNotBlank(fileName)) {
 
-                    // 文件重命名  imooc-face.png -> ["imooc-face", "png"]
+                    // 文件重命名  mtianyan-face.png -> ["mtianyan-face", "png"]
                     String fileNameArr[] = fileName.split("\\.");
 
                     // 获取文件的后缀名
