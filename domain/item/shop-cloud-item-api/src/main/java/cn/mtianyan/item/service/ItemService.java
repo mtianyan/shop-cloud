@@ -1,4 +1,4 @@
-package cn.mtianyan.service;
+package cn.mtianyan.item.service;
 
 import cn.mtianyan.item.pojo.*;
 import cn.mtianyan.pojo.PagedGridResult;
@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.cloud.openfeign.FeignClient;
 
 import java.util.List;
 
@@ -15,6 +16,7 @@ import java.util.List;
  * Create By mtianyan
  * 2019/12/27 11:28
  */
+@FeignClient("shop-cloud-item-service")
 @RequestMapping("item-api")
 public interface ItemService {
 

@@ -5,10 +5,12 @@ import cn.mtianyan.order.pojo.bo.PlaceOrderBO;
 import cn.mtianyan.order.pojo.bo.SubmitOrderBO;
 import cn.mtianyan.order.pojo.vo.OrderVO;
 import cn.mtianyan.pojo.ShopCartBO;
+import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@FeignClient("shop-cloud-order-service")
 @RequestMapping("order-api")
 public interface OrderService {
 

@@ -5,8 +5,10 @@ import cn.mtianyan.order.pojo.Orders;
 import cn.mtianyan.order.pojo.vo.OrderStatusCountsVO;
 import cn.mtianyan.pojo.MJSONResult;
 import cn.mtianyan.pojo.PagedGridResult;
+import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 
+@FeignClient("shop-cloud-order-service")
 @RequestMapping("myorder-api")
 public interface MyOrdersService {
 

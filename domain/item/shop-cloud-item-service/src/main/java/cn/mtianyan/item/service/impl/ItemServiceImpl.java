@@ -1,4 +1,4 @@
-package cn.mtianyan.service.impl;
+package cn.mtianyan.item.service.impl;
 
 import cn.mtianyan.enums.CommentLevel;
 import cn.mtianyan.enums.YesOrNo;
@@ -7,7 +7,7 @@ import cn.mtianyan.item.pojo.*;
 import cn.mtianyan.item.pojo.vo.CommentLevelCountsVO;
 import cn.mtianyan.item.pojo.vo.ItemCommentVO;
 import cn.mtianyan.item.pojo.vo.ShopCartVO;
-import cn.mtianyan.service.ItemService;
+import cn.mtianyan.item.service.ItemService;
 import cn.mtianyan.pojo.PagedGridResult;
 import cn.mtianyan.utils.DesensitizationUtil;
 import com.github.pagehelper.PageHelper;

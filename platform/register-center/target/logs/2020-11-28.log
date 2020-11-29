@@ -15628,3 +15628,41 @@ Unconditional classes:
 [23:05:31.952] DEBUG [Eureka-CacheFillTimer]c.n.e.r.ResponseCacheImpl - New application cache entry {name=ALL_APPS, type=Application, format=JSON} with apps hashcode 
 [23:05:35.180] INFO  [Eureka-EvictionTimer]c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 2ms
 [23:05:35.180] DEBUG [Eureka-EvictionTimer]c.n.e.r.AbstractInstanceRegistry - Running the evict task
+[23:06:01.956] DEBUG [Eureka-CacheFillTimer]c.n.e.r.ResponseCacheImpl - Updating the client cache from response cache
+[23:06:01.956] DEBUG [Eureka-CacheFillTimer]c.n.e.r.ResponseCacheImpl - Updating the client cache from response cache for key : Application ALL_APPS_DELTA V2 JSON
+[23:06:01.956] DEBUG [Eureka-CacheFillTimer]c.n.e.r.ResponseCacheImpl - Updating the client cache from response cache for key : Application ALL_APPS V2 JSON
+[23:06:31.956] DEBUG [Eureka-CacheFillTimer]c.n.e.r.ResponseCacheImpl - Updating the client cache from response cache
+[23:06:31.956] DEBUG [Eureka-CacheFillTimer]c.n.e.r.ResponseCacheImpl - Updating the client cache from response cache for key : Application ALL_APPS_DELTA V2 JSON
+[23:06:31.956] DEBUG [Eureka-CacheFillTimer]c.n.e.r.ResponseCacheImpl - Updating the client cache from response cache for key : Application ALL_APPS V2 JSON
+[23:06:35.184] INFO  [Eureka-EvictionTimer]c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 40ms
+[23:06:35.184] DEBUG [Eureka-EvictionTimer]c.n.e.r.AbstractInstanceRegistry - Running the evict task
+[23:06:35.184] DEBUG [Eureka-EvictionTimer]c.n.e.r.AbstractInstanceRegistry - DS: lease expiration is currently disabled.
+[23:06:53.554] DEBUG [Thread-13]o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2b9627bc, started on Sat Nov 28 18:12:26 CST 2020, parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@649d209a
+[23:06:53.554] INFO  [Thread-13]o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application EUREKA-SERVER with eureka with status DOWN
+[23:06:53.556] DEBUG [Thread-13]o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 0
+[23:06:53.557] DEBUG [Thread-13]o.s.c.s.DefaultLifecycleProcessor - Bean 'org.springframework.cloud.netflix.eureka.server.EurekaServerInitializerConfiguration' completed its stop procedure
+[23:06:53.557] INFO  [Thread-13]c.n.e.DefaultEurekaServerContext - Shutting down ...
+[23:06:53.559] INFO  [Thread-13]c.n.e.DefaultEurekaServerContext - Shut down
+[23:06:53.561] DEBUG [Thread-13]o.s.b.a.e.j.JmxEndpointExporter - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Archaius' from the JMX domain
+[23:06:53.561] DEBUG [Thread-13]o.s.b.a.e.j.JmxEndpointExporter - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Auditevents' from the JMX domain
+[23:06:53.561] DEBUG [Thread-13]o.s.b.a.e.j.JmxEndpointExporter - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Beans' from the JMX domain
+[23:06:53.561] DEBUG [Thread-13]o.s.b.a.e.j.JmxEndpointExporter - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Caches' from the JMX domain
+[23:06:53.561] DEBUG [Thread-13]o.s.b.a.e.j.JmxEndpointExporter - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Health' from the JMX domain
+[23:06:53.561] DEBUG [Thread-13]o.s.b.a.e.j.JmxEndpointExporter - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Conditions' from the JMX domain
+[23:06:53.561] DEBUG [Thread-13]o.s.b.a.e.j.JmxEndpointExporter - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Configprops' from the JMX domain
+[23:06:53.561] DEBUG [Thread-13]o.s.b.a.e.j.JmxEndpointExporter - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Env' from the JMX domain
+[23:06:53.561] DEBUG [Thread-13]o.s.b.a.e.j.JmxEndpointExporter - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Info' from the JMX domain
+[23:06:53.561] DEBUG [Thread-13]o.s.b.a.e.j.JmxEndpointExporter - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Loggers' from the JMX domain
+[23:06:53.561] DEBUG [Thread-13]o.s.b.a.e.j.JmxEndpointExporter - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Threaddump' from the JMX domain
+[23:06:53.561] DEBUG [Thread-13]o.s.b.a.e.j.JmxEndpointExporter - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Metrics' from the JMX domain
+[23:06:53.561] DEBUG [Thread-13]o.s.b.a.e.j.JmxEndpointExporter - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Scheduledtasks' from the JMX domain
+[23:06:53.561] DEBUG [Thread-13]o.s.b.a.e.j.JmxEndpointExporter - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Httptrace' from the JMX domain
+[23:06:53.561] DEBUG [Thread-13]o.s.b.a.e.j.JmxEndpointExporter - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Mappings' from the JMX domain
+[23:06:53.561] DEBUG [Thread-13]o.s.b.a.e.j.JmxEndpointExporter - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Refresh' from the JMX domain
+[23:06:53.561] DEBUG [Thread-13]o.s.b.a.e.j.JmxEndpointExporter - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Features' from the JMX domain
+[23:06:53.561] DEBUG [Thread-13]o.s.b.a.e.j.JmxEndpointExporter - Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Service-registry' from the JMX domain
+[23:06:53.561] DEBUG [Thread-13]o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+[23:06:53.562] DEBUG [Thread-13]o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+[23:06:53.562] INFO  [Thread-13]o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[23:06:53.566] INFO  [Thread-13]c.n.d.DiscoveryClient - Shutting down DiscoveryClient ...
+[23:06:53.566] INFO  [Thread-13]c.n.d.DiscoveryClient - Completed shut down of DiscoveryClient

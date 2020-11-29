@@ -2,8 +2,10 @@ package cn.mtianyan.user.service;
 
 import cn.mtianyan.user.pojo.Users;
 import cn.mtianyan.user.pojo.bo.UserBO;
+import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 
+@FeignClient("shop-cloud-user-service")
 @RequestMapping("user-api")
 public interface UserService {
 

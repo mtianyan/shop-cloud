@@ -1,4 +1,4 @@
-package cn.mtianyan.service;
+package cn.mtianyan.item.service;
 
 import cn.mtianyan.pojo.PagedGridResult;
 import com.github.pagehelper.PageInfo;

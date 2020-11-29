@@ -2,10 +2,12 @@ package cn.mtianyan.order.service.center;
 
 import cn.mtianyan.order.pojo.OrderItems;
 import cn.mtianyan.order.pojo.bo.center.OrderItemsCommentBO;
+import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@FeignClient("shop-cloud-order-service")
 @RequestMapping("order-comments-api")
 public interface MyCommentsService {
 

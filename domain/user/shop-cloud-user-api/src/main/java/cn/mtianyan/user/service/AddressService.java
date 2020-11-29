@@ -2,9 +2,11 @@ package cn.mtianyan.user.service;
 
 import cn.mtianyan.user.pojo.UserAddress;
 import cn.mtianyan.user.pojo.bo.AddressBO;
+import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
+@FeignClient("shop-cloud-user-service")
 @RequestMapping("address-api")
 public interface AddressService {
 

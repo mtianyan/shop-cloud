@@ -8,7 +8,7 @@ import cn.mtianyan.item.pojo.ItemsSpec;
 import cn.mtianyan.item.pojo.vo.CommentLevelCountsVO;
 import cn.mtianyan.item.pojo.vo.ItemInfoVO;
 import cn.mtianyan.item.pojo.vo.ShopCartVO;
-import cn.mtianyan.service.ItemService;
+import cn.mtianyan.item.service.ItemService;
 import cn.mtianyan.pojo.MJSONResult;
 import cn.mtianyan.pojo.PagedGridResult;
 import io.swagger.annotations.Api;

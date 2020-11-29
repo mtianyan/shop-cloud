@@ -1,9 +1,9 @@
-package cn.mtianyan.service.impl;
+package cn.mtianyan.item.service.impl;
 
 import cn.mtianyan.item.mapper.ItemsCommentsMapperCustom;
 import cn.mtianyan.item.pojo.vo.MyCommentVO;
-import cn.mtianyan.service.BaseService;
-import cn.mtianyan.service.ItemCommentsService;
+import cn.mtianyan.item.service.BaseService;
+import cn.mtianyan.item.service.ItemCommentsService;
 import cn.mtianyan.pojo.PagedGridResult;
 import com.github.pagehelper.PageHelper;
 import org.springframework.beans.factory.annotation.Autowired;

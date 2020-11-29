@@ -13,7 +13,7 @@ import cn.mtianyan.order.pojo.vo.OrderStatusCountsVO;
 import cn.mtianyan.order.service.center.MyOrdersService;
 import cn.mtianyan.pojo.MJSONResult;
 import cn.mtianyan.pojo.PagedGridResult;
-import cn.mtianyan.service.BaseService;
+import cn.mtianyan.item.service.BaseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;

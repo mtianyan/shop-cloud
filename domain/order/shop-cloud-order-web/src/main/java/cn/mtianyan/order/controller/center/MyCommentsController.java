@@ -9,12 +9,12 @@ import cn.mtianyan.order.service.center.MyCommentsService;
 import cn.mtianyan.order.service.center.MyOrdersService;
 import cn.mtianyan.pojo.MJSONResult;
 import cn.mtianyan.pojo.PagedGridResult;
+import cn.mtianyan.item.service.ItemCommentsService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.loadbalancer.LoadBalancerClient;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -32,6 +32,9 @@ public class MyCommentsController extends BaseController {
 
     @Autowired
     private MyOrdersService myOrdersService;
+
+    @Autowired
+    private ItemCommentsService itemCommentsService;
 
     @Autowired
     private LoadBalancerClient client;
@@ -109,24 +112,11 @@ public class MyCommentsController extends BaseController {
             pageSize = COMMON_PAGE_SIZE;
         }
 
-        // TODO 前方施工，学完Feign再来改造
-        ServiceInstance instance = client.choose("shop-cloud-ITEM-SERVICE");
-        String target = String.format("http://%s:%s/item-comments-api/myComments" +
-                        "?userId=%s&page=%s&pageSize=%s",
-                instance.getHost(),
-                instance.getPort(),
-                userId,
+        PagedGridResult grid = itemCommentsService.queryMyComments(userId,
                 page,
                 pageSize);
-        // 偷个懒，不判断返回status，等下个章节用Feign重写
-        PagedGridResult grid = restTemplate.getForObject(target, PagedGridResult.class);
+
         return MJSONResult.ok(grid);
-//
-//        PagedGridResult grid = myCommentsService.queryMyComments(userId,
-//                page,
-//                pageSize);
-//
-//        return MJSONResult.ok(grid);
     }
 
 }

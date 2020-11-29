@@ -1,6 +1,7 @@
-package cn.mtianyan.service;
+package cn.mtianyan.item.service;
 
 import cn.mtianyan.pojo.PagedGridResult;
+import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;
@@ -9,6 +10,7 @@ import java.util.Map;
  * Create By mtianyan
  * 2020/11/28 17:46
  */
+@FeignClient("shop-cloud-item-service")
 @RequestMapping("item-comments-api")
 public interface ItemCommentsService {
 

@@ -1,2 +1,2 @@
-cn/mtianyan/service/ItemCommentsService.class
-cn/mtianyan/service/ItemService.class
+cn/mtianyan/item/service/ItemService.class
+cn/mtianyan/item/service/ItemCommentsService.class

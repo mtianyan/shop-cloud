@@ -40,7 +40,7 @@ public class ServiceLogAspect {
      * @return
      * @throws Throwable
      */
-//    @Around("execution(* cn.mtianyan.service.impl..*.*(..))")
+//    @Around("execution(* cn.mtianyan.item.service.impl..*.*(..))")
     @Around("execution(* cn.mtianyan..*.service.impl..*.*(..))")
     public Object recordTimeLog(ProceedingJoinPoint joinPoint) throws Throwable {
 

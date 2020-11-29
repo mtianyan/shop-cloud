@@ -2,8 +2,10 @@ package cn.mtianyan.user.service.center;
 
 import cn.mtianyan.user.pojo.Users;
 import cn.mtianyan.user.pojo.bo.center.CenterUserBO;
+import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 
+@FeignClient("shop-cloud-user-service")
 @RequestMapping("center-user-api")
 public interface CenterUserService {
 
