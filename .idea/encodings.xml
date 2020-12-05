@@ -38,6 +38,10 @@
     <file url="file://$PROJECT_DIR$/domain/user/shop-cloud-user-service/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/domain/user/shop-cloud-user-web/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/domain/user/shop-cloud-user-web/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/platform/hystrix-dashboard/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/platform/hystrix-dashboard/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/platform/hystrix-turbine/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/platform/hystrix-turbine/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/platform/register-center/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/platform/register-center/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />

@@ -1,2 +1,2 @@
-/Users/mtianyan/tyRepos/Java/Mmall_Learning/shop-cloud/domain/item/shop-cloud-item-api/src/main/java/cn/mtianyan/service/ItemService.java
-/Users/mtianyan/tyRepos/Java/Mmall_Learning/shop-cloud/domain/item/shop-cloud-item-api/src/main/java/cn/mtianyan/service/ItemCommentsService.java
+/Users/mtianyan/tyRepos/Java/Mmall_Learning/shop-cloud/domain/item/shop-cloud-item-api/src/main/java/cn/mtianyan/item/service/ItemCommentsService.java
+/Users/mtianyan/tyRepos/Java/Mmall_Learning/shop-cloud/domain/item/shop-cloud-item-api/src/main/java/cn/mtianyan/item/service/ItemService.java

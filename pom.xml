@@ -10,7 +10,6 @@
     <modules>
         <module>common/shop-cloud-common</module>
         <module>common/shop-cloud-shared-pojo</module>
-        <module>platform/register-center</module>
         <module>common/shop-cloud-web-components</module>
         <module>domain/item/shop-cloud-item-pojo</module>
         <module>domain/item/shop-cloud-item-mapper</module>
@@ -31,6 +30,10 @@
         <module>domain/cart/shop-cloud-cart-api</module>
         <module>domain/cart/shop-cloud-cart-service</module>
         <module>domain/cart/shop-cloud-cart-web</module>
+
+        <module>platform/register-center</module>
+        <module>platform/hystrix-turbine</module>
+        <module>platform/hystrix-dashboard</module>
     </modules>
     <packaging>pom</packaging>
 

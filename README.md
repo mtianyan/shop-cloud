@@ -28,6 +28,11 @@ curl --location --request POST 'http://localhost:10003/mycomments/saveList?order
 
 http://localhost:10004/shopcart/add?userId=200715G19PPGZ72W
 
+# 服务容错测试
+
+POST http://localhost:10003/mycomments/query?page=0&pageSize=10&userId=1908017YR51G1XWH
+
+![](http://cdn.pic.mtianyan.cn/blog_img/20201206060716.png)
 
 
 

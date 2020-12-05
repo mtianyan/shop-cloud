@@ -1,5 +1,9 @@
 package cn.mtianyan.order;
 
+import cn.mtianyan.item.service.ItemService;
+import cn.mtianyan.order.fallback.itemservice.ItemCommentsFeignClient;
+import cn.mtianyan.user.service.AddressService;
+import cn.mtianyan.user.service.UserService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
@@ -16,10 +20,18 @@ import tk.mybatis.spring.annotation.MapperScan;
 @ComponentScan(basePackages = {"cn.mtianyan", "org.n3r.idworker"})
 @EnableDiscoveryClient
 @EnableScheduling
-@EnableFeignClients(basePackages = {
-        "cn.mtianyan.user.service",
-        "cn.mtianyan.item.service"
-})
+@EnableFeignClients(
+//        basePackages = {
+//        "cn.mtianyan.user.service",
+//        "cn.mtianyan.item.service"
+//}
+clients = {
+        ItemCommentsFeignClient.class,
+        ItemService.class,
+        UserService.class,
+        AddressService.class
+}
+)
 public class OrderApplication {
 
     public static void main(String[] args) {
