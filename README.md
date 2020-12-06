@@ -34,5 +34,8 @@ POST http://localhost:10003/mycomments/query?page=0&pageSize=10&userId=1908017YR
 
 ![](http://cdn.pic.mtianyan.cn/blog_img/20201206060716.png)
 
+# 配置中心验证
+
+http://localhost:10002/address-api/addressList?userId=1908189H7TNWDTXP
 
 

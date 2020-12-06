@@ -30,6 +30,7 @@
         <module name="shop-cloud-item-api" />
         <module name="shop-cloud-item-web" />
         <module name="shop-cloud-user-service" />
+        <module name="config-server" />
         <module name="shop-cloud-order-service" />
         <module name="shop-item-mapper" />
       </profile>

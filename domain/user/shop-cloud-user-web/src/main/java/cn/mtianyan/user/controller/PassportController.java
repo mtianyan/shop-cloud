@@ -3,6 +3,7 @@ package cn.mtianyan.user.controller;
 import cn.mtianyan.controller.BaseController;
 import cn.mtianyan.pojo.MJSONResult;
 import cn.mtianyan.pojo.ShopCartBO;
+import cn.mtianyan.user.UserApplicationProperties;
 import cn.mtianyan.user.pojo.Users;
 import cn.mtianyan.user.pojo.bo.UserBO;
 import cn.mtianyan.user.service.UserService;
@@ -23,6 +24,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.ArrayList;
 import java.util.List;
 
+import static cn.mtianyan.aspect.ServiceLogAspect.log;
+
 @Api(value = "注册登录", tags = {"用于注册登录的相关接口"})
 @RestController
 @RequestMapping("passport")
@@ -33,6 +36,10 @@ public class PassportController extends BaseController {
 
     @Autowired
     private RedisOperator redisOperator;
+
+
+    @Autowired
+    private UserApplicationProperties userApplicationProperties;
 
     @ApiOperation(value = "用户名是否存在", notes = "用户名是否存在", httpMethod = "GET")
     @GetMapping("/usernameIsExist")
@@ -58,6 +65,11 @@ public class PassportController extends BaseController {
     public MJSONResult regist(@RequestBody UserBO userBO,
                                   HttpServletRequest request,
                                   HttpServletResponse response) {
+
+        if (userApplicationProperties.isDisableRegistration()) {
+            log.info("user registration request is blocked - {}", userBO.getUsername());
+            return MJSONResult.errorMsg("当前注册用户过多，请稍后再试");
+        }
 
         String username = userBO.getUsername();
         String password = userBO.getPassword();
