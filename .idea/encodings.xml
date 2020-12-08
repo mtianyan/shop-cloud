@@ -7,6 +7,9 @@
     <file url="file://$PROJECT_DIR$/common/shop-cloud-shared-pojo/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/common/shop-cloud-web-components/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/common/shop-cloud-web-components/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/domain/auth/shop-cloud-auth-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/domain/auth/shop-cloud-auth-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/domain/auth/shop-cloud-auth-service/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/domain/cart/shop-cloud-cart-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/domain/cart/shop-cloud-cart-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/domain/cart/shop-cloud-cart-web/src/main/java" charset="UTF-8" />
@@ -40,6 +43,8 @@
     <file url="file://$PROJECT_DIR$/domain/user/shop-cloud-user-web/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/platform/config-server/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/platform/config-server/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/platform/gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/platform/gateway/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/platform/hystrix-dashboard/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/platform/hystrix-dashboard/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/platform/hystrix-turbine/src/main/java" charset="UTF-8" />

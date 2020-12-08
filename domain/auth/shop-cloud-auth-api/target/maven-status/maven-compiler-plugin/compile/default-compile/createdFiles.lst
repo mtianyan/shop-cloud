@@ -1,0 +1,6 @@
+cn/mtianyan/auth/service/pojo/AuthCode.class
+cn/mtianyan/auth/service/pojo/Account.class
+cn/mtianyan/auth/service/AuthService.class
+cn/mtianyan/auth/service/pojo/AuthResponse.class
+cn/mtianyan/auth/service/pojo/Account$AccountBuilder.class
+cn/mtianyan/auth/service/pojo/AuthResponse$AuthResponseBuilder.class

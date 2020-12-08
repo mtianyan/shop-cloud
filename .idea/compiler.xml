@@ -27,12 +27,15 @@
         <module name="shop-cloud-item-service" />
         <module name="shop-cloud-order-mapper" />
         <module name="shop-cloud-item-pojo" />
+        <module name="shop-cloud-auth-service" />
         <module name="shop-cloud-item-api" />
         <module name="shop-cloud-item-web" />
         <module name="shop-cloud-user-service" />
+        <module name="shop-cloud-auth-api" />
         <module name="config-server" />
         <module name="shop-cloud-order-service" />
         <module name="shop-item-mapper" />
+        <module name="gateway" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

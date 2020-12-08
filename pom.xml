@@ -35,6 +35,10 @@
         <module>platform/hystrix-turbine</module>
         <module>platform/hystrix-dashboard</module>
         <module>platform/config-server</module>
+        <module>platform/gateway</module>
+
+        <module>domain/auth/shop-cloud-auth-api</module>
+        <module>domain/auth/shop-cloud-auth-service</module>
     </modules>
     <packaging>pom</packaging>
 

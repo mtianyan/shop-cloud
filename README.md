@@ -38,4 +38,11 @@ POST http://localhost:10003/mycomments/query?page=0&pageSize=10&userId=1908017YR
 
 http://localhost:10002/address-api/addressList?userId=1908189H7TNWDTXP
 
+# gateWay 验证
+
+![](http://cdn.pic.mtianyan.cn/blog_img/20201208211512.png)
+
+http://localhost:20004/address/list?userld=1908189H7TNWDTXP
+
+
 
