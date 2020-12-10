@@ -51,6 +51,8 @@
     <file url="file://$PROJECT_DIR$/platform/hystrix-turbine/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/platform/register-center/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/platform/register-center/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/platform/zipkin-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/platform/zipkin-server/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
   </component>

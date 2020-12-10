@@ -8,7 +8,16 @@ spring:
     database: 0
     host: localhost
     port: 6379
-    password: imooc
+#    password: imooc
+  zipkin:
+    discoveryClientEnabled: true
+    base-url: http://ZIPKIN-SERVER/
+    locator:
+      discovery:
+        enabled: true
+  sleuth:
+    sampler:
+      probability: 1
 
 eureka:
   client:

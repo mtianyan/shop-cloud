@@ -9,6 +9,18 @@ spring:
     database: 0
   main:
     allow-bean-definition-overriding: true
+  # 链路追踪
+  zipkin:
+    discoveryClientEnabled: true
+    base-url: http://ZIPKIN-SERVER/
+    locator:
+      discovery:
+        enabled: true
+  sleuth:
+    sampler:
+      probability: 1
+
+  # 跨域配置
   cloud:
     gateway:
       globalcors:

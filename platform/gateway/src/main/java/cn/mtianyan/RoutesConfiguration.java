@@ -49,13 +49,13 @@ public class RoutesConfiguration {
                         "/address/delete",
                         "/userInfo/**", "/center/**")
                         .filters(f -> f.filter(authFilter))
-                        .uri("lb://FOODIE-USER-SERVICE")
+                        .uri("lb://SHOP-CLOUD-USER-SERVICE")
                 )
                 .route(r -> r.path("/auth-service/refresh")
                         .uri("lb://FOODIE-AUTH-SERVICE")
                 )
                 .route(r -> r.path("/search/**", "/index/**", "/items/search", "/items/catItems")
-                        .uri("lb://FOODIE-SEARCH-SERVICE")
+                        .uri("lb://SHOP-CLOUD-SEARCH-SERVICE")
                 )
                 // 配置url pattern经常会漏掉某些字符导致转发出错，同学们发现视频里提到的那个导致错误的彩蛋了吗？
                 .route(r -> r.path("/address/**", "/passport/**", "/userInfo/**", "/center/**")
@@ -64,16 +64,16 @@ public class RoutesConfiguration {
                             c.setRateLimiter(rateLimiterUser);
 //                            c.setStatusCode(HttpStatus.BAD_GATEWAY);
                         }))
-                        .uri("lb://FOODIE-USER-SERVICE")
+                        .uri("lb://SHOP-CLOUD-USER-SERVICE")
                 )
                 .route(r -> r.path("/items/**")
-                        .uri("lb://FOODIE-ITEM-SERVICE")
+                        .uri("lb://SHOP-CLOUD-ITEM-SERVICE")
                 )
                 .route(r -> r.path("/shopcart/**")
-                        .uri("lb://FOODIE-CART-SERVICE")
+                        .uri("lb://SHOP-CLOUD-CART-SERVICE")
                 )
                 .route(r -> r.path("/orders/**", "/myorders/**", "/mycomments/**")
-                        .uri("lb://FOODIE-ORDER-SERVICE")
+                        .uri("lb://SHOP-CLOUD-ORDER-SERVICE")
                 )
                 .build();
 

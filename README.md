@@ -44,5 +44,27 @@ http://localhost:10002/address-api/addressList?userId=1908189H7TNWDTXP
 
 http://localhost:20004/address/list?userld=1908189H7TNWDTXP
 
+# zipkin 启动
 
+http://127.0.0.1:20005/zipkin/
+
+# elk日志
+
+![](http://cdn.pic.mtianyan.cn/blog_img/20201210224045.png)
+
+# 403 log测试
+
+curl --location --request POST 'http://localhost:20004/address/list?userld=191226GT3NH40WSW' \
+--header 'Authorization: 123123' \
+--header 'imooc-user-id: 191226GT3NH40WSW'
+
+![](http://cdn.pic.mtianyan.cn/blog_img/20201210225400.png)
+
+# 获取auth token
+
+curl --location --request POST 'http://localhost:10006/auth-service/token?userId=200715G19PPGZ72W'
+
+curl --location --request POST 'http://localhost:20004/address/list?userId=200715G19PPGZ72W' \
+--header 'Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ5YW8iLCJleHAiOjE2MDc2OTg4NzEsImlhdCI6MTYwNzYxMjQ3MSwidXNlcmlkIjoiMjAwNzE1RzE5UFBHWjcyVyJ9.98mALfuI7cHdh6VuZjWZ38M5Mz2l6rhu8Wrkgg8MDIg' \
+--header 'imooc-user-id: 200715G19PPGZ72W'
 
