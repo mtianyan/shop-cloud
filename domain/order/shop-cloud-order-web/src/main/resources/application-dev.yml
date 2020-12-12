@@ -24,7 +24,20 @@ spring:
 #      nodes: 192.168.1.201:6379,192.168.1.202:6379,192.168.1.203:6379,192.168.1.204:6379,192.168.1.205:6379,192.168.1.206:6379
 #  session:
 #    store-type: redis
-
+  # 延迟消息
+  cloud:
+    stream:
+      bindings:
+        orderstatus-consumer:
+          destination: orderstatus-topic
+          group: order-group
+        orderstatus-producer:
+          destination: orderstatus-topic
+      rabbit:
+        bindings:
+          orderstatus-producer:
+            producer:
+              delayed-exchange: true
 mybatis:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

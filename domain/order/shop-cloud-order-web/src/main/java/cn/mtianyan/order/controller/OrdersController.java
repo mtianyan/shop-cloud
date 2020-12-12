@@ -4,7 +4,9 @@ import cn.mtianyan.controller.BaseController;
 import cn.mtianyan.enums.OrderStatusEnum;
 import cn.mtianyan.enums.PayMethod;
 import cn.mtianyan.order.pojo.OrderStatus;
+import cn.mtianyan.order.pojo.bo.OrderStatusCheckBO;
 import cn.mtianyan.order.pojo.bo.PlaceOrderBO;
+import cn.mtianyan.order.stream.CheckOrderTopic;
 import cn.mtianyan.pojo.ShopCartBO;
 import cn.mtianyan.order.pojo.bo.SubmitOrderBO;
 import cn.mtianyan.order.pojo.vo.MerchantOrdersVO;
@@ -21,6 +23,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.*;
+import org.springframework.integration.support.MessageBuilder;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -46,6 +49,9 @@ public class OrdersController extends BaseController {
 
     @Autowired
     private RedisOperator redisOperator;
+
+    @Autowired
+    private CheckOrderTopic orderStatusProducer;
 
     @ApiOperation(value = "用户下单", notes = "用户下单", httpMethod = "POST")
     @PostMapping("/create")
@@ -85,6 +91,16 @@ public class OrdersController extends BaseController {
         redisOperator.set(FOODIE_SHOPCART + ":" + submitOrderBO.getUserId(), JsonUtils.objectToJson(shopcartList));
         // 整合redis之后，完善购物车中的已结算商品清除，并且同步到前端的cookie
         CookieUtils.setCookie(request, response, FOODIE_SHOPCART, JsonUtils.objectToJson(shopcartList), true);
+
+        // order status检查
+        OrderStatusCheckBO msg = new OrderStatusCheckBO();
+        msg.setOrderID(orderId);
+        // 可以采用更短的Delay时间, 在consumer里面重新投递消息
+        orderStatusProducer.output().send(
+                MessageBuilder.withPayload(msg)
+                        .setHeader("x-delay", 3600 * 24 * 1000 + 300 * 1000)
+                        .build()
+        );
 
         // 3. 向支付中心发送当前订单，用于保存支付中心的订单数据
         MerchantOrdersVO merchantOrdersVO = orderVO.getMerchantOrdersVO();
