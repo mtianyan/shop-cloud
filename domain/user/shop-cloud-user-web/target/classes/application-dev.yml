@@ -3,11 +3,11 @@ server:
 
 spring:
   datasource:                                           # 数据源的相关配置
-#    url: jdbc:mysql://localhost:3306/foodie-shop?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true
+    url: jdbc:mysql://localhost:3306/foodie-shop?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true
     username: root
-#    password: mtianyanroot
-    url: ${mariadb.url}
-    password: ${mariadb.password}
+    password: mtianyanroot
+#    url: ${mariadb.url}
+#    password: ${mariadb.password}
   redis:
     # Redis 单机单实例
     database: 0
@@ -40,6 +40,19 @@ spring:
 #      nodes: 192.168.1.201:6379,192.168.1.202:6379,192.168.1.203:6379,192.168.1.204:6379,192.168.1.205:6379,192.168.1.206:6379
 #  session:
 #    store-type: redis
+  ############################################################
+  # Stream配置
+  ############################################################
+  cloud:
+    stream:
+      bindings:
+        force-logout-consumer:
+          destination: force-logout-topic
+          group: force-logout-group
+          consumer:
+            max-attempts: 2
+        force-logout-producer:
+          destination: force-logout-topic
 
 mybatis:
   configuration:

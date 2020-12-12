@@ -52,7 +52,10 @@ http://127.0.0.1:20005/zipkin/
 
 ![](http://cdn.pic.mtianyan.cn/blog_img/20201210224045.png)
 
+
+
 # 403 log测试
+![](http://cdn.pic.mtianyan.cn/blog_img/20201210233119.png)
 
 curl --location --request POST 'http://localhost:20004/address/list?userld=191226GT3NH40WSW' \
 --header 'Authorization: 123123' \
@@ -67,4 +70,18 @@ curl --location --request POST 'http://localhost:10006/auth-service/token?userId
 curl --location --request POST 'http://localhost:20004/address/list?userId=200715G19PPGZ72W' \
 --header 'Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ5YW8iLCJleHAiOjE2MDc2OTg4NzEsImlhdCI6MTYwNzYxMjQ3MSwidXNlcmlkIjoiMjAwNzE1RzE5UFBHWjcyVyJ9.98mALfuI7cHdh6VuZjWZ38M5Mz2l6rhu8Wrkgg8MDIg' \
 --header 'imooc-user-id: 200715G19PPGZ72W'
+
+# 批量强制退出，stream ，降级流程
+
+curl --location --request POST 'localhost:10002/passport/forceLogout' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'userIds=1908189H7TNWDTXP,123'
+
+curl --location --request POST 'localhost:10002/passport/forceLogout?userIds=1908189H7TNWDTXP,123'
+
+[15:01:10.865] INFO  c.m.u.s.UserMessageConsumer - Force logout user, uid=1908189H7TNWDTXP
+[15:01:10.872] INFO  c.m.u.s.UserMessageConsumer - Force logout failed
+[15:01:10.875] INFO  c.m.u.s.UserMessageConsumer - Force logout user, uid=123
+[15:01:11.883] INFO  c.m.u.s.UserMessageConsumer - Force logout user, uid=123
+[15:01:11.886] INFO  c.m.u.s.UserMessageConsumer - Force logout failed
 

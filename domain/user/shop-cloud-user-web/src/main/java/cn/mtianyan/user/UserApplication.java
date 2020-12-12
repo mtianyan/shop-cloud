@@ -4,6 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.ComponentScan;
 import tk.mybatis.spring.annotation.MapperScan;
 
@@ -14,6 +15,7 @@ import tk.mybatis.spring.annotation.MapperScan;
 @ComponentScan(basePackages = {"cn.mtianyan", "org.n3r.idworker"})
 @EnableDiscoveryClient
 @EnableCircuitBreaker
+@EnableFeignClients(basePackages = {"cn.mtianyan.auth"})
 public class UserApplication {
 
     public static void main(String[] args) {

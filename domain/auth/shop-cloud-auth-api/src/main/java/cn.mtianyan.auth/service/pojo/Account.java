@@ -22,4 +22,6 @@ public class Account implements Serializable {
 
     private String refreshToken;
 
+    private boolean skipVerification = false;
+
 }

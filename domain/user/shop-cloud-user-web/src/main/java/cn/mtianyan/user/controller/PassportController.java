@@ -7,6 +7,7 @@ import cn.mtianyan.user.UserApplicationProperties;
 import cn.mtianyan.user.pojo.Users;
 import cn.mtianyan.user.pojo.bo.UserBO;
 import cn.mtianyan.user.service.UserService;
+import cn.mtianyan.user.stream.ForceLogoutTopic;
 import cn.mtianyan.utils.CookieUtils;
 import cn.mtianyan.utils.JsonUtils;
 import cn.mtianyan.utils.MD5Utils;
@@ -17,6 +18,7 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.integration.support.MessageBuilder;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
@@ -37,6 +39,8 @@ public class PassportController extends BaseController {
     @Autowired
     private RedisOperator redisOperator;
 
+    @Autowired
+    private ForceLogoutTopic producer;
 
     @Autowired
     private UserApplicationProperties userApplicationProperties;
@@ -289,4 +293,19 @@ public class PassportController extends BaseController {
         return MJSONResult.ok();
     }
 
+
+    // FIXME 将这个接口从网关层移除，不对外暴露
+    // 简陋版api - 长得丑但是跑得快
+    @ApiOperation(value = "用户强制退出登录", notes = "用户退出登录", httpMethod = "POST")
+    @PostMapping("/forceLogout")
+    public MJSONResult forceLogout(@RequestParam String userIds) {
+        if (StringUtils.isNotBlank(userIds)) {
+            for (String uid : userIds.split(",")) {
+                log.info("send logout message, uid={}", uid);
+                producer.output()
+                        .send(MessageBuilder.withPayload(uid).build());
+            }
+        }
+        return MJSONResult.ok();
+    }
 }
