@@ -3,13 +3,13 @@ server:
 
 spring:
   datasource:                                           # 数据源的相关配置
-    url: jdbc:mysql://localhost:3306/foodie-shop?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true
+    url: jdbc:mysql://192.168.31.38:3306/foodie-shop?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true
     username: root
     password: mtianyanroot
   redis:
     # Redis 单机单实例
     database: 0
-    host: 127.0.0.1
+    host: 192.168.31.38
     port: 6379
 #    password: mtianyanRedisRoot
     # Redis 哨兵模式

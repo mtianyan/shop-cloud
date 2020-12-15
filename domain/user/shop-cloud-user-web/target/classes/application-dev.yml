@@ -3,7 +3,7 @@ server:
 
 spring:
   datasource:                                           # 数据源的相关配置
-    url: jdbc:mysql://localhost:3306/foodie-shop?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true
+    url: jdbc:mysql://192.168.31.38:3306/foodie-shop?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true
     username: root
     password: mtianyanroot
 #    url: ${mariadb.url}
@@ -11,12 +11,12 @@ spring:
   redis:
     # Redis 单机单实例
     database: 0
-    host: 127.0.0.1
+    host: 192.168.31.38
     port: 6379
   # 链路追踪
   zipkin:
     discoveryClientEnabled: true
-    base-url: http://ZIPKIN-SERVER/
+    base-url: http://192.168.31.38:20005/
     locator:
       discovery:
         enabled: true

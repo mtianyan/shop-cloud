@@ -85,3 +85,7 @@ curl --location --request POST 'localhost:10002/passport/forceLogout?userIds=190
 [15:01:11.883] INFO  c.m.u.s.UserMessageConsumer - Force logout user, uid=123
 [15:01:11.886] INFO  c.m.u.s.UserMessageConsumer - Force logout failed
 
+# docker 启动
+
+![](http://cdn.pic.mtianyan.cn/blog_img/20201213231643.png)
+

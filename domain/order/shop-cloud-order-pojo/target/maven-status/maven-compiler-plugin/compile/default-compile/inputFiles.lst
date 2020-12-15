@@ -8,4 +8,5 @@
 /Users/mtianyan/tyRepos/Java/Mmall_Learning/shop-cloud/domain/order/shop-cloud-order-pojo/src/main/java/cn/mtianyan/order/pojo/bo/PlaceOrderBO.java
 /Users/mtianyan/tyRepos/Java/Mmall_Learning/shop-cloud/domain/order/shop-cloud-order-pojo/src/main/java/cn/mtianyan/order/pojo/vo/MySubOrderItemVO.java
 /Users/mtianyan/tyRepos/Java/Mmall_Learning/shop-cloud/domain/order/shop-cloud-order-pojo/src/main/java/cn/mtianyan/order/pojo/vo/OrderStatusCountsVO.java
+/Users/mtianyan/tyRepos/Java/Mmall_Learning/shop-cloud/domain/order/shop-cloud-order-pojo/src/main/java/cn/mtianyan/order/pojo/bo/OrderStatusCheckBO.java
 /Users/mtianyan/tyRepos/Java/Mmall_Learning/shop-cloud/domain/order/shop-cloud-order-pojo/src/main/java/cn/mtianyan/order/pojo/Orders.java

@@ -4,7 +4,7 @@ spring:
   application:
     name: platform-gateway
   redis:
-    host: localhost
+    host: 192.168.31.38
     port: 6379
     database: 0
   main:
@@ -12,7 +12,7 @@ spring:
   # 链路追踪
   zipkin:
     discoveryClientEnabled: true
-    base-url: http://ZIPKIN-SERVER/
+    base-url: http://192.168.31.38:20005/
     locator:
       discovery:
         enabled: true
@@ -52,8 +52,11 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:20000/eureka/
-
+      defaultZone: http://192.168.31.38:20000/eureka/
+  instance:
+    instance-id: ${eureka.instance.ip-address}:${server.port}
+    ip-address: 192.168.31.38
+    prefer-ip-address: true
 ## 开启所有actuator-endpoint
 management:
   endpoint:
